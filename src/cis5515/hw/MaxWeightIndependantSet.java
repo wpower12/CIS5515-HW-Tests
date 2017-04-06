@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Implementation of Solution for Kleinberg,Tardos Problem 6.1
+ * Expects a text file named "test_maxweight.txt" in the directory. 
+ * First line is an interger, the number of nodes
+ * then each line after is a node weight value, in path order.  
  */
 package cis5515.hw;
 
@@ -23,7 +24,7 @@ public class MaxWeightIndependantSet {
      */
     public static void main(String[] args) throws IOException {
         // Read 'graph' into array
-        BufferedReader fin = new BufferedReader( new FileReader("test.txt"));
+        BufferedReader fin = new BufferedReader( new FileReader("test_maxweight.txt"));
         int N = Integer.parseInt( fin.readLine() );       
         path = new int[N];
         M = new int[N];
